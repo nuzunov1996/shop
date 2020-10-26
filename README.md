@@ -14,7 +14,7 @@
 
 8).Add new product: http://localhost:8080/product (POST)
 
-	JSON: 
+JSON: 
   {
     "name":"ASUS",
     "category":"Laptop",
@@ -23,7 +23,7 @@
   }
 9).Update product: http://localhost:8080/product (PATCH)
 
-	JSON: 
+JSON: 
   {
       "id":1004,
       "name":"Asus",
@@ -33,7 +33,7 @@
 
 10).Delete product: http://localhost:8080/product (DELETE)
   
-  JSON: 
+ JSON: 
   {
       "id":1014
   }
@@ -47,7 +47,7 @@
   
 12).Gett all products: http://localhost:8080/categories (GET)
   
-	JSON: 
+JSON: 
   {
       "id":1014
   }
