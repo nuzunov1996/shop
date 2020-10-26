@@ -21,6 +21,7 @@ JSON:
     "description":"desc",
     "quantity":35
   }
+
 9).Update product: http://localhost:8080/product (PATCH)
 
 JSON: 
