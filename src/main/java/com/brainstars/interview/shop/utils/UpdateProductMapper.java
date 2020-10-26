@@ -1,4 +1,5 @@
-package com.brainstars.interview.shop;
+package com.brainstars.interview.shop.utils;
+
 
 import com.brainstars.interview.shop.models.DTOs.product.UpdateProductDTO;
 import com.brainstars.interview.shop.models.domains.Product;
@@ -6,8 +7,16 @@ import com.brainstars.interview.shop.models.domains.Product;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class UpdateProductMapper {
-    public static Product map(Product product, UpdateProductDTO dto) {
+
+public class UpdateProductMapper
+{
+    private UpdateProductMapper()
+    {
+    }
+
+
+    public static Product map(Product product, UpdateProductDTO dto)
+    {
         if (dto.getId() != 0)
             product.setId(dto.getId());
 
@@ -18,7 +27,7 @@ public class UpdateProductMapper {
             product.setCategory(dto.getCategory());
 
         if (Objects.nonNull(dto.getDescription()))
-            product.setCategory(dto.getDescription());
+            product.setDescription(dto.getDescription());
 
         product.setLastModifiedDate(LocalDate.now());
 

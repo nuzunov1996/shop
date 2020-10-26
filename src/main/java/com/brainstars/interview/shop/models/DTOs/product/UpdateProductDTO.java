@@ -1,15 +1,19 @@
 package com.brainstars.interview.shop.models.DTOs.product;
 
+
 import com.fasterxml.jackson.annotation.JsonGetter;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonSetter;
 
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-public class UpdateProductDTO {
+
+public class UpdateProductDTO
+{
     @NotNull
-    @Size(min = 0)
+    @Min(0)
     @JsonProperty(defaultValue = "id")
     private Long id;
 
@@ -22,43 +26,59 @@ public class UpdateProductDTO {
     @JsonProperty(defaultValue = "description")
     private String description;
 
+
     @JsonGetter
-    public long getId() {
+    public long getId()
+    {
         return id;
     }
 
+
     @JsonSetter
-    public void setId(long id) {
+    public void setId(long id)
+    {
         this.id = id;
     }
 
+
     @JsonGetter
-    public String getName() {
+    public String getName()
+    {
         return name;
     }
 
+
     @JsonSetter
-    public void setName(String name) {
+    public void setName(String name)
+    {
         this.name = name;
     }
 
+
     @JsonGetter
-    public String getCategory() {
+    public String getCategory()
+    {
         return category;
     }
 
+
     @JsonSetter
-    public void setCategory(String category) {
+    public void setCategory(String category)
+    {
         this.category = category;
     }
 
+
     @JsonGetter
-    public String getDescription() {
+    public String getDescription()
+    {
         return description;
     }
 
+
     @JsonSetter
-    public void setDescription(String description) {
+    public void setDescription(String description)
+    {
         this.description = description;
     }
 }
