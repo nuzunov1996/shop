@@ -8,11 +8,15 @@
 
 5). Make sure you are running postgres on port 5432
 
-6). Go in project folder and run in terminal: mvn spring-boot:run
+6). Clone the repository.
 
-7). Server runs at port 8080.
+7). Checkout ot master branch.
 
-8).Add new product: http://localhost:8080/product (POST)
+8). Go in project folder and run in terminal: mvn spring-boot:run
+
+9). Server runs at port 8080.
+
+10).Add new product: http://localhost:8080/product (POST)
 
 JSON: 
   {
@@ -21,8 +25,8 @@ JSON:
     "description":"desc",
     "quantity":35
   }
-
-9).Update product: http://localhost:8080/product (PATCH)
+  
+11).Update product: http://localhost:8080/product (PATCH)
 
 JSON: 
   {
@@ -32,21 +36,21 @@ JSON:
       "category":"new category"
   }
 
-10).Delete product: http://localhost:8080/product (DELETE)
+12).Delete product: http://localhost:8080/product (DELETE)
   
  JSON: 
   {
       "id":1014
   }
   
-11).Gett all products: http://localhost:8080/products/?page=3&pageSize=2&orderBy=name&direction=DESC (GET)
+13).Gett all products: http://localhost:8080/products/?page=3&pageSize=2&orderBy=name&direction=DESC (GET)
   
   JSON: 
   {
       "id":1014
   }
   
-12).Gett all products: http://localhost:8080/categories (GET)
+14).Gett all products: http://localhost:8080/categories (GET)
   
 JSON: 
   {
