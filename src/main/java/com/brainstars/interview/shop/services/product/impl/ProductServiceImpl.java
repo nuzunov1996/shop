@@ -1,7 +1,6 @@
 package com.brainstars.interview.shop.services.product.impl;
 
 
-import com.brainstars.interview.shop.utils.UpdateProductMapper;
 import com.brainstars.interview.shop.exceptions.InsufficientQuantityException;
 import com.brainstars.interview.shop.exceptions.ProductDoesntExistException;
 import com.brainstars.interview.shop.models.DTOs.product.AddProductDTO;
@@ -12,6 +11,7 @@ import com.brainstars.interview.shop.models.domains.Product;
 import com.brainstars.interview.shop.models.domains.ProductsByCategory;
 import com.brainstars.interview.shop.repositories.product.ProductRepository;
 import com.brainstars.interview.shop.services.product.ProductService;
+import com.brainstars.interview.shop.utils.UpdateProductMapper;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;

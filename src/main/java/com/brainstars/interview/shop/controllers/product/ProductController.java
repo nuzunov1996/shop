@@ -48,7 +48,7 @@ public class ProductController
     @PostMapping("/product")
     public ResponseEntity<?> addProduct(@Valid @RequestBody AddProductDTO dto, BindingResult result)
     {
-        if(result.hasErrors())
+        if (result.hasErrors())
             return ResponseEntity.badRequest().body(getErrors(result));
 
         Product product = productService.addProduct(dto);
@@ -62,7 +62,7 @@ public class ProductController
     @DeleteMapping("/product")
     public ResponseEntity<?> deleteProduct(@Valid @RequestBody DeleteProductDTO dto, BindingResult result)
     {
-        if(result.hasErrors())
+        if (result.hasErrors())
             return ResponseEntity.badRequest().body(getErrors(result));
         try
         {
@@ -81,7 +81,7 @@ public class ProductController
     @PatchMapping("/product")
     public ResponseEntity<?> updateProduct(@Valid @RequestBody UpdateProductDTO dto, BindingResult result)
     {
-        if(result.hasErrors())
+        if (result.hasErrors())
             return ResponseEntity.badRequest().body(getErrors(result));
 
         try
@@ -134,6 +134,7 @@ public class ProductController
     {
         return ResponseEntity.ok(productService.getCategories());
     }
+
 
     private List<String> getErrors(BindingResult result)
     {
